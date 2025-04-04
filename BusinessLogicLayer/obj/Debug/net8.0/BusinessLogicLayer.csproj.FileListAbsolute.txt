@@ -1,0 +1,16 @@
+D:\thietkekientrucphanmem\QLCafe\QuanlyquanCafe\BusinessLogicLayer\bin\Debug\net8.0\BusinessLogicLayer.deps.json
+D:\thietkekientrucphanmem\QLCafe\QuanlyquanCafe\BusinessLogicLayer\bin\Debug\net8.0\BusinessLogicLayer.dll
+D:\thietkekientrucphanmem\QLCafe\QuanlyquanCafe\BusinessLogicLayer\bin\Debug\net8.0\BusinessLogicLayer.pdb
+D:\thietkekientrucphanmem\QLCafe\QuanlyquanCafe\BusinessLogicLayer\bin\Debug\net8.0\DataAccessLayer.dll
+D:\thietkekientrucphanmem\QLCafe\QuanlyquanCafe\BusinessLogicLayer\bin\Debug\net8.0\DataAccessLayer.pdb
+D:\thietkekientrucphanmem\QLCafe\QuanlyquanCafe\BusinessLogicLayer\obj\Debug\net8.0\BusinessLogicLayer.csproj.AssemblyReference.cache
+D:\thietkekientrucphanmem\QLCafe\QuanlyquanCafe\BusinessLogicLayer\obj\Debug\net8.0\BusinessLogicLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\thietkekientrucphanmem\QLCafe\QuanlyquanCafe\BusinessLogicLayer\obj\Debug\net8.0\BusinessLogicLayer.AssemblyInfoInputs.cache
+D:\thietkekientrucphanmem\QLCafe\QuanlyquanCafe\BusinessLogicLayer\obj\Debug\net8.0\BusinessLogicLayer.AssemblyInfo.cs
+D:\thietkekientrucphanmem\QLCafe\QuanlyquanCafe\BusinessLogicLayer\obj\Debug\net8.0\BusinessLogicLayer.csproj.CoreCompileInputs.cache
+D:\thietkekientrucphanmem\QLCafe\QuanlyquanCafe\BusinessLogicLayer\obj\Debug\net8.0\BusinessLogicLayer.sourcelink.json
+D:\thietkekientrucphanmem\QLCafe\QuanlyquanCafe\BusinessLogicLayer\obj\Debug\net8.0\Business.450209FB.Up2Date
+D:\thietkekientrucphanmem\QLCafe\QuanlyquanCafe\BusinessLogicLayer\obj\Debug\net8.0\BusinessLogicLayer.dll
+D:\thietkekientrucphanmem\QLCafe\QuanlyquanCafe\BusinessLogicLayer\obj\Debug\net8.0\refint\BusinessLogicLayer.dll
+D:\thietkekientrucphanmem\QLCafe\QuanlyquanCafe\BusinessLogicLayer\obj\Debug\net8.0\BusinessLogicLayer.pdb
+D:\thietkekientrucphanmem\QLCafe\QuanlyquanCafe\BusinessLogicLayer\obj\Debug\net8.0\ref\BusinessLogicLayer.dll

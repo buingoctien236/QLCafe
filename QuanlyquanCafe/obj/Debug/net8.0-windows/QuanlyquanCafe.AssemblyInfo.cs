@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("QuanlyquanCafe")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6aaf01a03a6f339b2b2278026a328b14b900dde0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+acba119f03f6833e615e9c92a3bb9167fff9508b")]
 [assembly: System.Reflection.AssemblyProductAttribute("QuanlyquanCafe")]
 [assembly: System.Reflection.AssemblyTitleAttribute("QuanlyquanCafe")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\thietkekientrucphanmem\\QuanCafe\\QLCafe\\QuanlyquanCafe\\QuanlyquanCafe\\QuanlyquanCafe.csproj",
+      "projectUniqueName": "D:\\thietkekientrucphanmem\\QLCafe\\QuanlyquanCafe\\QuanlyquanCafe\\QuanlyquanCafe.csproj",
       "projectName": "QuanlyquanCafe",
-      "projectPath": "D:\\thietkekientrucphanmem\\QuanCafe\\QLCafe\\QuanlyquanCafe\\QuanlyquanCafe\\QuanlyquanCafe.csproj",
+      "projectPath": "D:\\thietkekientrucphanmem\\QLCafe\\QuanlyquanCafe\\QuanlyquanCafe\\QuanlyquanCafe.csproj",
       "packagesPath": "C:\\Users\\ottti\\.nuget\\packages\\",
-      "outputPath": "D:\\thietkekientrucphanmem\\QuanCafe\\QLCafe\\QuanlyquanCafe\\QuanlyquanCafe\\obj\\",
+      "outputPath": "D:\\thietkekientrucphanmem\\QLCafe\\QuanlyquanCafe\\QuanlyquanCafe\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
