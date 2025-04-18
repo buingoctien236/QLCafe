@@ -24,8 +24,14 @@ namespace PresentationLayer
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            pictureBox1.Image = Image.FromFile("D:\\Thiết kế kiến trúc máy tính\\QLCafe\\ic_search.png");
-            pictureBox1.SizeMode =PictureBoxSizeMode.StretchImage;
+            pictureBox1.Image = Image.FromFile("images/ic_search.png");
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+
+        }
+
+        private void btn_search_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
