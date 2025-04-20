@@ -40,3 +40,4 @@ D:\thietkekientrucphanmem\QLCafe\QuanlyquanCafe\PresentationLayer\obj\Debug\net8
 D:\thietkekientrucphanmem\QLCafe\QuanlyquanCafe\PresentationLayer\obj\Debug\net8.0-windows\PresentationLayer.Giaodienchinh.resources
 D:\thietkekientrucphanmem\QLCafe\QuanlyquanCafe\PresentationLayer\obj\Debug\net8.0-windows\PresentationLayer.Giaodienmangve.resources
 D:\thietkekientrucphanmem\QLCafe\QuanlyquanCafe\PresentationLayer\obj\Debug\net8.0-windows\PresentationLayer.Login.resources
+D:\thietkekientrucphanmem\QLCafe\QuanlyquanCafe\PresentationLayer\obj\Debug\net8.0-windows\PresentationLayer.fMain.resources
