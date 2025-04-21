@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using DataAccessLayer;
 using BusinessLogicLayer;
+using System.DirectoryServices.ActiveDirectory;
 namespace PresentationLayer
 {
     public partial class fMain : Form
@@ -18,6 +19,7 @@ namespace PresentationLayer
         {
             InitializeComponent();
             loadTable();
+            
         }
         void loadTable()
         {
@@ -40,7 +42,28 @@ namespace PresentationLayer
                 flayer1.Controls.Add(btn);
             }
         }
-
        
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedTab = tabPage2;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Giaodienmangve g = new Giaodienmangve();
+            g.ShowDialog();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            ftest t = new ftest();
+            t.ShowDialog();
+        }
+
+        private void flayer1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

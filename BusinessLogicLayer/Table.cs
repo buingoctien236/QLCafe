@@ -11,7 +11,7 @@ namespace BusinessLogicLayer
             this.Ten_ban = name;
         }
 
-        public Table(DataRow row) // constructor đúng
+        public Table(DataRow row) 
         {
             this.desk_id = (int)row["desks_id"];
             this.ten_ban = row["ten_ban"].ToString();

@@ -32,10 +32,10 @@ namespace PresentationLayer
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            Giaodienchinh f = new Giaodienchinh();
-            this.Hide();
-            f.ShowDialog();
-            this.Show();
+            //Giaodienchinh f = new Giaodienchinh();
+            //this.Hide();
+            //f.ShowDialog();
+            //this.Show();
 
         }
     }

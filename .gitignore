@@ -1,0 +1,32 @@
+# Ignore Visual Studio folders
+.vs/
+*.user
+*.suo
+
+# Build results
+bin/
+obj/
+
+# Backup & temp files
+*.log
+*.tmp
+*.bak
+*.cache
+
+# Database
+*.mdf
+*.ldf
+*.dbmdl
+
+# Debug & profiling
+*.pdb
+*.psess
+*.vsp
+*.vspx
+
+# VS Code
+.vscode/
+
+# Others
+*.DS_Store
+Thumbs.db

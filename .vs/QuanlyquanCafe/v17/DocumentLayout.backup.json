@@ -3,24 +3,32 @@
   "WorkspaceRootPath": "D:\\thietkekientrucphanmem\\QLCafe\\QuanlyquanCafe\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{B2D7A1B4-7616-42FB-B46E-3C81426F531C}|PresentationLayer\\PresentationLayer.csproj|d:\\thietkekientrucphanmem\\qlcafe\\quanlyquancafe\\presentationlayer\\giaodienmangve.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B2D7A1B4-7616-42FB-B46E-3C81426F531C}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\giaodienmangve.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2D7A1B4-7616-42FB-B46E-3C81426F531C}|PresentationLayer\\PresentationLayer.csproj|d:\\thietkekientrucphanmem\\qlcafe\\quanlyquancafe\\presentationlayer\\giaodienmangve.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2D7A1B4-7616-42FB-B46E-3C81426F531C}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\giaodienmangve.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B2D7A1B4-7616-42FB-B46E-3C81426F531C}|PresentationLayer\\PresentationLayer.csproj|d:\\thietkekientrucphanmem\\qlcafe\\quanlyquancafe\\presentationlayer\\fmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{B2D7A1B4-7616-42FB-B46E-3C81426F531C}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\fmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2D7A1B4-7616-42FB-B46E-3C81426F531C}|PresentationLayer\\PresentationLayer.csproj|d:\\thietkekientrucphanmem\\qlcafe\\quanlyquancafe\\presentationlayer\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2D7A1B4-7616-42FB-B46E-3C81426F531C}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B2D7A1B4-7616-42FB-B46E-3C81426F531C}|PresentationLayer\\PresentationLayer.csproj|d:\\thietkekientrucphanmem\\qlcafe\\quanlyquancafe\\presentationlayer\\fmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B2D7A1B4-7616-42FB-B46E-3C81426F531C}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\fmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B2D7A1B4-7616-42FB-B46E-3C81426F531C}|PresentationLayer\\PresentationLayer.csproj|d:\\thietkekientrucphanmem\\qlcafe\\quanlyquancafe\\presentationlayer\\fmain.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B2D7A1B4-7616-42FB-B46E-3C81426F531C}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\fmain.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B2D7A1B4-7616-42FB-B46E-3C81426F531C}|PresentationLayer\\PresentationLayer.csproj|d:\\thietkekientrucphanmem\\qlcafe\\quanlyquancafe\\presentationlayer\\ftest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2D7A1B4-7616-42FB-B46E-3C81426F531C}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\ftest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B2D7A1B4-7616-42FB-B46E-3C81426F531C}|PresentationLayer\\PresentationLayer.csproj|d:\\thietkekientrucphanmem\\qlcafe\\quanlyquancafe\\presentationlayer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B2D7A1B4-7616-42FB-B46E-3C81426F531C}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{939AE19A-51B3-4B07-B3D3-CE106E63DEEE}|BusinessLogicLayer\\BusinessLogicLayer.csproj|d:\\thietkekientrucphanmem\\qlcafe\\quanlyquancafe\\businesslogiclayer\\table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{939AE19A-51B3-4B07-B3D3-CE106E63DEEE}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{81714557-5667-4745-9E84-799E33DA160C}|DataAccessLayer\\DataAccessLayer.csproj|d:\\thietkekientrucphanmem\\qlcafe\\quanlyquancafe\\dataaccesslayer\\drinktypedal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81714557-5667-4745-9E84-799E33DA160C}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\drinktypedal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 18,
           "Children": [
             {
               "$type": "Bookmark",
@@ -49,67 +57,144 @@
               "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:2:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "fMain.cs",
-              "DocumentMoniker": "D:\\thietkekientrucphanmem\\QLCafe\\QuanlyquanCafe\\PresentationLayer\\fMain.cs",
-              "RelativeDocumentMoniker": "PresentationLayer\\fMain.cs",
-              "ToolTip": "D:\\thietkekientrucphanmem\\QLCafe\\QuanlyquanCafe\\PresentationLayer\\fMain.cs",
-              "RelativeToolTip": "PresentationLayer\\fMain.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAiwBwAAAAoAAAAAAAAAA==",
+              "Title": "Giaodienmangve.cs",
+              "DocumentMoniker": "D:\\thietkekientrucphanmem\\QLCafe\\QuanlyquanCafe\\PresentationLayer\\Giaodienmangve.cs",
+              "RelativeDocumentMoniker": "PresentationLayer\\Giaodienmangve.cs",
+              "ToolTip": "D:\\thietkekientrucphanmem\\QLCafe\\QuanlyquanCafe\\PresentationLayer\\Giaodienmangve.cs*",
+              "RelativeToolTip": "PresentationLayer\\Giaodienmangve.cs*",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAhwE8AAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-20T20:22:29.113Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "fMain.Designer.cs",
-              "DocumentMoniker": "D:\\thietkekientrucphanmem\\QLCafe\\QuanlyquanCafe\\PresentationLayer\\fMain.Designer.cs",
-              "RelativeDocumentMoniker": "PresentationLayer\\fMain.Designer.cs",
-              "ToolTip": "D:\\thietkekientrucphanmem\\QLCafe\\QuanlyquanCafe\\PresentationLayer\\fMain.Designer.cs",
-              "RelativeToolTip": "PresentationLayer\\fMain.Designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-20T20:22:24.606Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\thietkekientrucphanmem\\QLCafe\\QuanlyquanCafe\\PresentationLayer\\Program.cs",
-              "RelativeDocumentMoniker": "PresentationLayer\\Program.cs",
-              "ToolTip": "D:\\thietkekientrucphanmem\\QLCafe\\QuanlyquanCafe\\PresentationLayer\\Program.cs",
-              "RelativeToolTip": "PresentationLayer\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-20T20:16:18.733Z",
+              "WhenOpened": "2025-04-21T17:38:55.054Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Giaodienmangve.cs [Design]",
+              "DocumentMoniker": "D:\\thietkekientrucphanmem\\QLCafe\\QuanlyquanCafe\\PresentationLayer\\Giaodienmangve.cs",
+              "RelativeDocumentMoniker": "PresentationLayer\\Giaodienmangve.cs",
+              "ToolTip": "D:\\thietkekientrucphanmem\\QLCafe\\QuanlyquanCafe\\PresentationLayer\\Giaodienmangve.cs [Design]*",
+              "RelativeToolTip": "PresentationLayer\\Giaodienmangve.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-21T17:38:51.46Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "fMain.cs [Design]",
               "DocumentMoniker": "D:\\thietkekientrucphanmem\\QLCafe\\QuanlyquanCafe\\PresentationLayer\\fMain.cs",
               "RelativeDocumentMoniker": "PresentationLayer\\fMain.cs",
               "ToolTip": "D:\\thietkekientrucphanmem\\QLCafe\\QuanlyquanCafe\\PresentationLayer\\fMain.cs [Design]",
               "RelativeToolTip": "PresentationLayer\\fMain.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-20T20:11:28.686Z",
+              "WhenOpened": "2025-04-21T17:36:47.262Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Table.cs",
-              "DocumentMoniker": "D:\\thietkekientrucphanmem\\QLCafe\\QuanlyquanCafe\\BusinessLogicLayer\\Table.cs",
-              "RelativeDocumentMoniker": "BusinessLogicLayer\\Table.cs",
-              "ToolTip": "D:\\thietkekientrucphanmem\\QLCafe\\QuanlyquanCafe\\BusinessLogicLayer\\Table.cs",
-              "RelativeToolTip": "BusinessLogicLayer\\Table.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
+              "Title": "fMain.cs",
+              "DocumentMoniker": "D:\\thietkekientrucphanmem\\QLCafe\\QuanlyquanCafe\\PresentationLayer\\fMain.cs",
+              "RelativeDocumentMoniker": "PresentationLayer\\fMain.cs",
+              "ToolTip": "D:\\thietkekientrucphanmem\\QLCafe\\QuanlyquanCafe\\PresentationLayer\\fMain.cs",
+              "RelativeToolTip": "PresentationLayer\\fMain.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAgwCwAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-20T20:08:14.824Z",
+              "WhenOpened": "2025-04-21T17:36:38.905Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Login.cs",
+              "DocumentMoniker": "D:\\thietkekientrucphanmem\\QLCafe\\QuanlyquanCafe\\PresentationLayer\\Login.cs",
+              "RelativeDocumentMoniker": "PresentationLayer\\Login.cs",
+              "ToolTip": "D:\\thietkekientrucphanmem\\QLCafe\\QuanlyquanCafe\\PresentationLayer\\Login.cs",
+              "RelativeToolTip": "PresentationLayer\\Login.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAIA7wCoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-21T17:12:42.901Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ftest.cs",
+              "DocumentMoniker": "D:\\thietkekientrucphanmem\\QLCafe\\QuanlyquanCafe\\PresentationLayer\\ftest.cs",
+              "RelativeDocumentMoniker": "PresentationLayer\\ftest.cs",
+              "ToolTip": "D:\\thietkekientrucphanmem\\QLCafe\\QuanlyquanCafe\\PresentationLayer\\ftest.cs",
+              "RelativeToolTip": "PresentationLayer\\ftest.cs",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAowFYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-21T17:04:06.718Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DrinkTypeDAL.cs",
+              "DocumentMoniker": "D:\\thietkekientrucphanmem\\QLCafe\\QuanlyquanCafe\\DataAccessLayer\\DrinkTypeDAL.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\DrinkTypeDAL.cs",
+              "ToolTip": "D:\\thietkekientrucphanmem\\QLCafe\\QuanlyquanCafe\\DataAccessLayer\\DrinkTypeDAL.cs",
+              "RelativeToolTip": "DataAccessLayer\\DrinkTypeDAL.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwCIAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-21T09:22:47.433Z",
               "EditorCaption": ""
             }
           ]

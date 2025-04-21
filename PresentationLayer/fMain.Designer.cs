@@ -83,6 +83,7 @@
             button1.TabIndex = 4;
             button1.Text = "Mang về";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // button2
             // 
@@ -93,6 +94,7 @@
             button2.TabIndex = 3;
             button2.Text = "Tại chỗ";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // label1
             // 
@@ -105,6 +107,7 @@
             label1.TabIndex = 1;
             label1.Text = "Nguồn đơn";
             label1.TextAlign = ContentAlignment.MiddleCenter;
+            label1.Click += label1_Click;
             // 
             // tabPage2
             // 
@@ -135,6 +138,7 @@
             flayer1.Name = "flayer1";
             flayer1.Size = new Size(938, 366);
             flayer1.TabIndex = 0;
+            flayer1.Paint += flayer1_Paint;
             // 
             // tabPage3
             // 
