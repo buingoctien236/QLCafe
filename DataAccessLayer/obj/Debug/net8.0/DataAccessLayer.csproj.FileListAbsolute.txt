@@ -11,3 +11,6 @@ D:\thietkekientrucphanmem\QLCafe\QuanlyquanCafe\DataAccessLayer\obj\Debug\net8.0
 D:\thietkekientrucphanmem\QLCafe\QuanlyquanCafe\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.pdb
 D:\thietkekientrucphanmem\QLCafe\QuanlyquanCafe\DataAccessLayer\obj\Debug\net8.0\ref\DataAccessLayer.dll
 D:\thietkekientrucphanmem\QLCafe\QuanlyquanCafe\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.csproj.AssemblyReference.cache
+D:\thietkekientrucphanmem\QLCafe\QuanlyquanCafe\DataAccessLayer\bin\Debug\net8.0\BusinessLogicLayer.dll
+D:\thietkekientrucphanmem\QLCafe\QuanlyquanCafe\DataAccessLayer\bin\Debug\net8.0\BusinessLogicLayer.pdb
+D:\thietkekientrucphanmem\QLCafe\QuanlyquanCafe\DataAccessLayer\obj\Debug\net8.0\DataAcce.E67BD773.Up2Date

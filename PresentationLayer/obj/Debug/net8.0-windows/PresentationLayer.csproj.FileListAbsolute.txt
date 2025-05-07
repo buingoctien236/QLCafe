@@ -37,6 +37,9 @@ D:\thietkekientrucphanmem\QLCafe\QuanlyquanCafe\PresentationLayer\bin\Debug\net8
 D:\thietkekientrucphanmem\QLCafe\QuanlyquanCafe\PresentationLayer\bin\Debug\net8.0-windows\runtimes\win-x64\native\krbcc64.dll
 D:\thietkekientrucphanmem\QLCafe\QuanlyquanCafe\PresentationLayer\bin\Debug\net8.0-windows\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
 D:\thietkekientrucphanmem\QLCafe\QuanlyquanCafe\PresentationLayer\obj\Debug\net8.0-windows\PresentationLayer.chamcong.resources
-D:\thietkekientrucphanmem\QLCafe\QuanlyquanCafe\PresentationLayer\obj\Debug\net8.0-windows\PresentationLayer.Giaodienchinh.resources
 D:\thietkekientrucphanmem\QLCafe\QuanlyquanCafe\PresentationLayer\obj\Debug\net8.0-windows\PresentationLayer.Giaodienmangve.resources
 D:\thietkekientrucphanmem\QLCafe\QuanlyquanCafe\PresentationLayer\obj\Debug\net8.0-windows\PresentationLayer.Login.resources
+D:\thietkekientrucphanmem\QLCafe\QuanlyquanCafe\PresentationLayer\obj\Debug\net8.0-windows\PresentationLayer.fMain.resources
+D:\thietkekientrucphanmem\QLCafe\QuanlyquanCafe\PresentationLayer\bin\Debug\net8.0-windows\PresentationLayer.dll.config
+D:\thietkekientrucphanmem\QLCafe\QuanlyquanCafe\PresentationLayer\obj\Debug\net8.0-windows\PresentationLayer.Properties.Resources.resources
+D:\thietkekientrucphanmem\QLCafe\QuanlyquanCafe\PresentationLayer\obj\Debug\net8.0-windows\PresentationLayer.ftest.resources
