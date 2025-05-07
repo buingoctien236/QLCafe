@@ -23,15 +23,12 @@ namespace DataAccessLayer
                 }
                 return TableDAL.instance;
             }
-            private set
+             set
             {
                 TableDAL.instance = value;
             }
 
         }
-        //dai rong button ban
-        public static int TableWidth = 200;
-        public static int TableHeight = 100;
 
 
         public TableDAL()

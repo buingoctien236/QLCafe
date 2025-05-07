@@ -1,37 +1,55 @@
 ﻿using DataAccessLayer;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using DataAccessLayer;
 using BusinessLogicLayer;
-using System.DirectoryServices.ActiveDirectory;
 
 namespace PresentationLayer
 {
     public partial class Giaodienmangve : Form
     {
+        private Label lbtenban;
+
         public Giaodienmangve()
         {
             InitializeComponent();
+            this.Load += new EventHandler(Giaodienmangve_Load); // goi dau tien
+
+ 
+        }
+
+        private void Giaodienmangve_Load(object sender, EventArgs e)
+        {
+            Table table = this.Tag as Table;
             LoadMenu();
         }
+
         void LoadMenu()
         {
             List<Menu> menus = MenuDAL.Instance.LoadMenuList();
             List<DrinkType> drinkTypes = DrinkTypeDAL.Instance.LoadDrinkTypes();
             string projectRoot = Directory.GetParent(Application.StartupPath).Parent.Parent.Parent.FullName;
-            //tong so loai_id
+            // tinh so luong loai_id
             var loaiIds = menus.Select(m => m.Loai_id).Distinct();
 
+
             foreach (var loaiId in loaiIds)
-            {   // LAY mota tuong ung
-                string moTa = drinkTypes.FirstOrDefault(dt => dt.Loai_id == loaiId)?.Mo_ta ?? "null";
+            {
+                string moTa;
+                var drinkType = drinkTypes.FirstOrDefault(dt => dt.Loai_id == loaiId);
+
+                if (drinkType != null)
+                {
+                    moTa = drinkType.Mo_ta;
+                }
+                else
+                {
+                    moTa = "null";
+                }
 
                 var panelGroup = new FlowLayoutPanel
                 {
@@ -89,46 +107,23 @@ namespace PresentationLayer
             }
         }
 
+        private void label1_Click(object sender, EventArgs e) { }
 
+        private void btn_search_Click(object sender, EventArgs e) { }
 
+        private void panel1_Paint(object sender, PaintEventArgs e) { }
 
+        private void btnBack_Click(object sender, EventArgs e) { }
 
+        private void pictureBox1_Click(object sender, EventArgs e) {
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
+            this.Hide();
+        
+        
         }
 
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e) { }
 
-
-        private void btn_search_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void btnBack_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void flowLayoutPanel1_Paint_1(object sender, PaintEventArgs e)
-        {
-
-        }
+        private void flowLayoutPanel1_Paint_1(object sender, PaintEventArgs e) { }
     }
 }
