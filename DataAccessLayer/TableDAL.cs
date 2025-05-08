@@ -23,7 +23,7 @@ namespace DataAccessLayer
                 }
                 return TableDAL.instance;
             }
-             set
+            set
             {
                 TableDAL.instance = value;
             }
@@ -38,8 +38,8 @@ namespace DataAccessLayer
         public List<Table> LoadTableList()
         {
             List<Table> tableList = new List<Table>();
-            DataTable dataTable = DataProvider.Instance.ExecuteQuery("SELECT * FROM desks");
-            foreach (DataRow item in dataTable.Rows)
+            DataTable data = DataProvider.Instance.ExecuteQuery("select * from TableFood");
+            foreach (DataRow item in data.Rows)
             {
                 Table table = new Table(item);
                 tableList.Add(table);

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DataAccessLayer;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,6 +18,44 @@ namespace PresentationLayer
             InitializeComponent();
         }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {   string userName = txtUserName.Text;
+            string passWord = txtPassWord.Text;
+            if (CheckLogin(userName,passWord))
+            {
+                fTableManager f = new fTableManager();
+                this.Hide();
+                f.ShowDialog();
+                this.Show();
+            }
+            else
+            {
+                MessageBox.Show("Sai tên");
+                return;
+            }
+            
+
+        }
+        bool CheckLogin(string userName , string passWord)
+        {
+            return AccountDAL.Instance.Login(userName,passWord);
+        }
+
+
         private void btnExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -30,13 +69,6 @@ namespace PresentationLayer
             }
         }
 
-        private void btnLogin_Click(object sender, EventArgs e)
-        {
-            //Giaodienchinh f = new Giaodienchinh();
-            //this.Hide();
-            //f.ShowDialog();
-            //this.Show();
 
-        }
     }
 }

@@ -1,0 +1,209 @@
+﻿
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using BusinessLogicLayer;
+using DataAccessLayer;
+
+namespace PresentationLayer
+{
+    public partial class fTableManager : Form
+    {
+        public fTableManager()
+        {
+            InitializeComponent();
+            LoadTable();
+            LoadCategory();
+        }
+
+        void LoadTable()
+        {   flpTable.Controls.Clear();
+            List<Table> tableList = TableDAL.Instance.LoadTableList();
+            foreach (Table item in tableList)
+            {
+                Button btn = new Button() { Width = 100, Height = 80 };
+                btn.Text = item.Name + Environment.NewLine + item.Status;
+                btn.Click += btn_Click;
+                btn.Tag = item;
+
+
+
+                switch (item.Status)
+                {
+                    case "Trống":
+                        btn.BackColor = Color.Aqua;
+                        break;
+                    default:
+                        btn.BackColor = Color.Pink;
+                        break;
+                }
+                flpTable.Controls.Add(btn);
+            }
+        }
+        void ShowBill(int id)
+        {
+            lsvBill.Items.Clear();
+            List<Menu> listBillInfo = MenuDAL.Instance.GetListMenuByTable(id);
+            float totalPrice = 0;
+            foreach (Menu item in listBillInfo)
+            {
+                ListViewItem listView1 = new ListViewItem(item.FoodName.ToString());
+                listView1.SubItems.Add(item.Count.ToString());
+                listView1.SubItems.Add(item.Price.ToString());
+                listView1.SubItems.Add(item.TotalPrice.ToString());
+                totalPrice += item.TotalPrice;
+                lsvBill.Items.Add(listView1);
+            }
+            txtTotalPrice.Text = totalPrice.ToString("c");
+            
+
+        }
+
+
+        void LoadCategory()
+        {
+            List<Category> listCategory = CategoryDAL.Instance.GetListCategory();
+            cbCategory.DataSource = listCategory;
+            cbCategory.DisplayMember = "Name";
+
+
+        }
+
+
+        void LoadFoodListByCategory(int id)
+        {
+            List<Food> listFood = FoodDAL.Instance.GetFoodByCategory(id);
+            cbFood.DataSource = listFood;
+            cbFood.DisplayMember = "Name";
+
+        }
+
+
+
+        void btn_Click(object sender, EventArgs e)
+        {
+            int tableID = ((sender as Button).Tag as Table).ID;
+            lsvBill.Tag = (sender as Button).Tag;
+            ShowBill(tableID);
+        }
+
+
+
+
+
+
+
+
+
+
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void numericUpDown1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAddFood_Click(object sender, EventArgs e)
+        {
+            Table table = lsvBill.Tag as Table; //lay ra table hien tai
+
+
+            int idBill = BillDAL.Instance.GetUnckeckBillIdByTableID(table.ID);
+            int foodID = (cbFood.SelectedItem as Food).ID;
+            int count = (int)nmFoodCount.Value;
+
+
+            if (idBill == -1) //ko co bill thi them moi
+            {
+                BillDAL.Instance.InsertBill(table.ID);
+                BillInfoDAL.Instance.InsertBillInfo(BillDAL.Instance.GetMaxIDBill(), foodID, count);
+            }
+            else
+            {
+                BillInfoDAL.Instance.InsertBillInfo(idBill, foodID, count);
+            }
+            ShowBill(table.ID);
+            LoadTable();
+        }
+
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void đăngXuấtToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void thôngTinCáNhânToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            fAccountProfile f = new fAccountProfile();
+            f.ShowDialog();
+        }
+
+        private void adminToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            fAdmin f = new fAdmin();
+            f.ShowDialog();
+
+        }
+
+        private void tableList_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void lsvBill_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cbCategory_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            int id = 0;
+
+            ComboBox cb = sender as ComboBox;
+            if (cb.SelectedItem == null)
+                return;
+            Category selected = cb.SelectedItem as Category;
+            id = selected.ID;
+            LoadFoodListByCategory(id);
+        }
+
+        private void btnCheckout_Click(object sender, EventArgs e)
+        {
+            Table table = lsvBill.Tag as Table; //lay ra table hien tai
+            int idBill = BillDAL.Instance.GetUnckeckBillIdByTableID(table.ID);
+            if (idBill != -1)
+            {
+                if (MessageBox.Show("Bạn có muốn thanh toán hóa đơn cho bàn "+ table.Name,
+                        "Thông báo",
+                        MessageBoxButtons.OKCancel) == DialogResult.OK)
+                {
+                    BillDAL.Instance.CheckOut(idBill);
+                    ShowBill(table.ID);
+                    
+                }
+            }
+
+
+        }
+    }
+}
