@@ -32,6 +32,10 @@ namespace DataAccessLayer
 
         }
 
+        public void DeleteBillInfoByFoodID(int id)
+        {
+            DataProvider.Instance.ExecuteQuery("Delete BillInfo where idFood = " +id);
+        }
         public List<BillInfo> GetListBillInfo(int id)
         {
             List<BillInfo> listBillInfo = new List<BillInfo>();

@@ -14,16 +14,29 @@ using DataAccessLayer;
 namespace PresentationLayer
 {
     public partial class fTableManager : Form
-    {
-        public fTableManager()
+    {   private Account loginAccount;
+        public Account LoginAccount
+        {
+            get { return loginAccount; }
+            set { loginAccount = value; ChangeAccount(loginAccount.Type); }
+        }
+
+
+
+
+        public fTableManager(Account acc)
         {
             InitializeComponent();
+            this.LoginAccount = acc; // truyen tai khoan vao
             LoadTable();
             LoadCategory();
+            LoadComboboxTable(cbSwitchTable);
+
         }
 
         void LoadTable()
-        {   flpTable.Controls.Clear();
+        {
+            flpTable.Controls.Clear();
             List<Table> tableList = TableDAL.Instance.LoadTableList();
             foreach (Table item in tableList)
             {
@@ -61,7 +74,7 @@ namespace PresentationLayer
                 lsvBill.Items.Add(listView1);
             }
             txtTotalPrice.Text = totalPrice.ToString("c");
-            
+
 
         }
 
@@ -94,8 +107,17 @@ namespace PresentationLayer
         }
 
 
+        void LoadComboboxTable(ComboBox cb)
+        {
+            cb.DataSource = TableDAL.Instance.LoadTableList();
+            cb.DisplayMember = "Name";
 
-
+        }
+        void ChangeAccount(int type)
+        {
+            adminToolStripMenuItem.Enabled = type == 1; // kiem tra quyen admin
+            thôngTinTàiKhoảnToolStripMenuItem.Text += "("+ loginAccount.DisplayName +")";
+        }
 
 
 
@@ -149,7 +171,7 @@ namespace PresentationLayer
 
         private void thôngTinCáNhânToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            fAccountProfile f = new fAccountProfile();
+            fAccountProfile f = new fAccountProfile( loginAccount);
             f.ShowDialog();
         }
 
@@ -191,19 +213,38 @@ namespace PresentationLayer
         {
             Table table = lsvBill.Tag as Table; //lay ra table hien tai
             int idBill = BillDAL.Instance.GetUnckeckBillIdByTableID(table.ID);
-            if (idBill != -1)
+
+            float totalPrice = float.Parse(txtTotalPrice.Text.Split(',')[0]);
             {
-                if (MessageBox.Show("Bạn có muốn thanh toán hóa đơn cho bàn "+ table.Name,
+                if (MessageBox.Show("Bạn có muốn thanh toán hóa đơn cho bàn " + table.Name,
                         "Thông báo",
                         MessageBoxButtons.OKCancel) == DialogResult.OK)
                 {
-                    BillDAL.Instance.CheckOut(idBill);
+                    BillDAL.Instance.CheckOut(idBill,totalPrice);
                     ShowBill(table.ID);
-                    
+                    LoadTable();
                 }
             }
 
 
         }
+
+        private void btnSwichTable_Click(object sender, EventArgs e)
+        {
+            Table table = lsvBill.Tag as Table;
+            int id1 = (lsvBill.Tag as Table).ID;
+            int id2 = (cbSwitchTable.SelectedItem as Table).ID;
+            string name1 = (lsvBill.Tag as Table).Name;
+            string name2 = (cbSwitchTable.SelectedItem as Table).Name;
+            string message = string.Format("Bạn có muốn chuyển bàn {0} sang bàn {1}?", name1, name2);
+            if (MessageBox.Show(message, "Thông báo", MessageBoxButtons.OKCancel) == DialogResult.OK)
+            {
+                TableDAL.Instance.SwitchTable(id1, id2);
+                ShowBill(table.ID);
+                LoadTable();
+            }
+        }
+        
+
     }
 }

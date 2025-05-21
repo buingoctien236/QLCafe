@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using BusinessLogicLayer;
 namespace PresentationLayer
 {
     public partial class Login : Form
@@ -36,15 +36,15 @@ namespace PresentationLayer
         {   string userName = txtUserName.Text;
             string passWord = txtPassWord.Text;
             if (CheckLogin(userName,passWord))
-            {
-                fTableManager f = new fTableManager();
+            {   Account loginAccount = AccountDAL.Instance.GetAccountByUserName(userName);
+                fTableManager f = new fTableManager(loginAccount);
                 this.Hide();
                 f.ShowDialog();
                 this.Show();
             }
             else
             {
-                MessageBox.Show("Sai tên");
+                MessageBox.Show("Sai thông tin tài khoản");
                 return;
             }
             

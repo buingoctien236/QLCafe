@@ -50,13 +50,13 @@
             panel8 = new Panel();
             textBox3 = new TextBox();
             label7 = new Label();
-            textBox5 = new TextBox();
+            txbNewPassWord = new TextBox();
             label8 = new Label();
             panel9 = new Panel();
             panel10 = new Panel();
             textBox6 = new TextBox();
             label9 = new Label();
-            textBox7 = new TextBox();
+            txbReEnterPassWord = new TextBox();
             label10 = new Label();
             btnUpdate = new Button();
             btnExit = new Button();
@@ -247,13 +247,14 @@
             // panel7
             // 
             panel7.Controls.Add(panel8);
-            panel7.Controls.Add(textBox5);
+            panel7.Controls.Add(txbNewPassWord);
             panel7.Controls.Add(label8);
             panel7.Location = new Point(12, 210);
             panel7.Margin = new Padding(3, 2, 3, 2);
             panel7.Name = "panel7";
             panel7.Size = new Size(612, 49);
             panel7.TabIndex = 5;
+            panel7.Paint += panel7_Paint;
             // 
             // panel8
             // 
@@ -283,13 +284,13 @@
             label7.TabIndex = 0;
             label7.Text = "Tên đăng nhập";
             // 
-            // textBox5
+            // txbNewPassWord
             // 
-            textBox5.Location = new Point(180, 14);
-            textBox5.Margin = new Padding(3, 2, 3, 2);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(309, 23);
-            textBox5.TabIndex = 1;
+            txbNewPassWord.Location = new Point(180, 14);
+            txbNewPassWord.Margin = new Padding(3, 2, 3, 2);
+            txbNewPassWord.Name = "txbNewPassWord";
+            txbNewPassWord.Size = new Size(309, 23);
+            txbNewPassWord.TabIndex = 1;
             // 
             // label8
             // 
@@ -304,7 +305,7 @@
             // panel9
             // 
             panel9.Controls.Add(panel10);
-            panel9.Controls.Add(textBox7);
+            panel9.Controls.Add(txbReEnterPassWord);
             panel9.Controls.Add(label10);
             panel9.Location = new Point(12, 269);
             panel9.Margin = new Padding(3, 2, 3, 2);
@@ -340,13 +341,13 @@
             label9.TabIndex = 0;
             label9.Text = "Tên đăng nhập";
             // 
-            // textBox7
+            // txbReEnterPassWord
             // 
-            textBox7.Location = new Point(180, 14);
-            textBox7.Margin = new Padding(3, 2, 3, 2);
-            textBox7.Name = "textBox7";
-            textBox7.Size = new Size(309, 23);
-            textBox7.TabIndex = 1;
+            txbReEnterPassWord.Location = new Point(180, 14);
+            txbReEnterPassWord.Margin = new Padding(3, 2, 3, 2);
+            txbReEnterPassWord.Name = "txbReEnterPassWord";
+            txbReEnterPassWord.Size = new Size(309, 23);
+            txbReEnterPassWord.TabIndex = 1;
             // 
             // label10
             // 
@@ -366,6 +367,7 @@
             btnUpdate.TabIndex = 6;
             btnUpdate.Text = "Cập nhật";
             btnUpdate.UseVisualStyleBackColor = true;
+            btnUpdate.Click += btnUpdate_Click;
             // 
             // btnExit
             // 
@@ -375,6 +377,7 @@
             btnExit.TabIndex = 7;
             btnExit.Text = "Thoát";
             btnExit.UseVisualStyleBackColor = true;
+            btnExit.Click += btnExit_Click;
             // 
             // fAccountProfile
             // 
@@ -391,6 +394,7 @@
             Controls.Add(panel2);
             Name = "fAccountProfile";
             Text = "Thông tin cá nhân";
+
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
             panel3.ResumeLayout(false);
@@ -438,13 +442,13 @@
         private Panel panel8;
         private TextBox textBox3;
         private Label label7;
-        private TextBox textBox5;
+        private TextBox txbNewPassWord;
         private Label label8;
         private Panel panel9;
         private Panel panel10;
         private TextBox textBox6;
         private Label label9;
-        private TextBox textBox7;
+        private TextBox txbReEnterPassWord;
         private Label label10;
         private Button btnUpdate;
         private Button btnExit;

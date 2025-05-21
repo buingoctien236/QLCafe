@@ -40,9 +40,9 @@ namespace DataAccessLayer
         }
 
 
-        public void CheckOut(int id)
+        public void CheckOut(int id,float totalPrice)
         {
-            string query = "UPDATE dbo.Bill SET status = 1  WHERE id = " +id;
+            string query = "UPDATE dbo.Bill SET dateCheckOut = GetDate(), status = 1,totalPrice ="+totalPrice+"  WHERE id = " +id;
             DataProvider.Instance.ExecuteNonQuery(query);
         }
         public void InsertBill(int id)
@@ -57,6 +57,14 @@ namespace DataAccessLayer
 
             return (int)DataProvider.Instance.ExecuteScalar("SELECT MAX(id) FROM dbo.Bill");
 
+        }
+
+
+
+
+        public DataTable GetBillListByDate(DateTime checkIn, DateTime checkOut)
+        {
+            return DataProvider.Instance.ExecuteQuery("exec GetListByDate @DateCheckIn , @DateCheckOut ", new object[] { checkIn, checkOut });
         }
     }
 }

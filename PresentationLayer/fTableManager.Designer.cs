@@ -43,7 +43,7 @@
             columnHeader4 = new ColumnHeader();
             panel3 = new Panel();
             txtTotalPrice = new TextBox();
-            comboBox1 = new ComboBox();
+            cbSwitchTable = new ComboBox();
             btnSwichTable = new Button();
             btnCheckout = new Button();
             panel4 = new Panel();
@@ -160,7 +160,7 @@
             // panel3
             // 
             panel3.Controls.Add(txtTotalPrice);
-            panel3.Controls.Add(comboBox1);
+            panel3.Controls.Add(cbSwitchTable);
             panel3.Controls.Add(btnSwichTable);
             panel3.Controls.Add(btnCheckout);
             panel3.Location = new Point(447, 377);
@@ -180,13 +180,13 @@
             txtTotalPrice.Text = "0";
             txtTotalPrice.TextAlign = HorizontalAlignment.Right;
             // 
-            // comboBox1
+            // cbSwitchTable
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(6, 27);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(79, 23);
-            comboBox1.TabIndex = 4;
+            cbSwitchTable.FormattingEnabled = true;
+            cbSwitchTable.Location = new Point(6, 27);
+            cbSwitchTable.Name = "cbSwitchTable";
+            cbSwitchTable.Size = new Size(79, 23);
+            cbSwitchTable.TabIndex = 4;
             // 
             // btnSwichTable
             // 
@@ -196,6 +196,7 @@
             btnSwichTable.TabIndex = 3;
             btnSwichTable.Text = "Chuyển bàn";
             btnSwichTable.UseVisualStyleBackColor = true;
+            btnSwichTable.Click += btnSwichTable_Click;
             // 
             // btnCheckout
             // 
@@ -297,7 +298,7 @@
         private ComboBox cbFood;
         private ComboBox cbCategory;
         private Button btnCheckout;
-        private ComboBox comboBox1;
+        private ComboBox cbSwitchTable;
         private Button btnSwichTable;
         private FlowLayoutPanel flpTable;
         private ColumnHeader columnHeader1;
