@@ -179,6 +179,7 @@
             txtTotalPrice.TabIndex = 5;
             txtTotalPrice.Text = "0";
             txtTotalPrice.TextAlign = HorizontalAlignment.Right;
+            txtTotalPrice.TextChanged += txtTotalPrice_TextChanged;
             // 
             // cbSwitchTable
             // 

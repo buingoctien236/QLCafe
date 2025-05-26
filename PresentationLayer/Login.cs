@@ -35,7 +35,7 @@ namespace PresentationLayer
         private void btnLogin_Click(object sender, EventArgs e)
         {   string userName = txtUserName.Text;
             string passWord = txtPassWord.Text;
-            if (CheckLogin(userName,passWord))
+            if (Account.CheckLogin(userName,passWord))
             {   Account loginAccount = AccountDAL.Instance.GetAccountByUserName(userName);
                 fTableManager f = new fTableManager(loginAccount);
                 this.Hide();
@@ -49,10 +49,6 @@ namespace PresentationLayer
             }
             
 
-        }
-        bool CheckLogin(string userName , string passWord)
-        {
-            return AccountDAL.Instance.Login(userName,passWord);
         }
 
 

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data;
+using DataAccessLayer;
 namespace BusinessLogicLayer
 {
     public class Account
@@ -31,5 +32,19 @@ namespace BusinessLogicLayer
         public string DisplayName { get => displayName; set => displayName = value; }
         public int Type { get => type; set => type = value; }
         public string Password { get => password; set => password = value; }
+
+
+
+
+
+        public static bool CheckLogin(string userName, string passWord)
+        {
+            return AccountDAL.Instance.Login(userName, passWord);
+        }
+
+
+
+
+
     }
 }

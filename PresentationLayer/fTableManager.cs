@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -14,7 +15,8 @@ using DataAccessLayer;
 namespace PresentationLayer
 {
     public partial class fTableManager : Form
-    {   private Account loginAccount;
+    {
+        private Account loginAccount;
         public Account LoginAccount
         {
             get { return loginAccount; }
@@ -33,6 +35,13 @@ namespace PresentationLayer
             LoadComboboxTable(cbSwitchTable);
 
         }
+        void ChangeAccount(int type)
+        {
+            adminToolStripMenuItem.Enabled = type == 1; // kiem tra quyen admin
+            thôngTinTàiKhoảnToolStripMenuItem.Text += "(" + loginAccount.DisplayName + ")";
+        }
+
+
 
         void LoadTable()
         {
@@ -113,13 +122,6 @@ namespace PresentationLayer
             cb.DisplayMember = "Name";
 
         }
-        void ChangeAccount(int type)
-        {
-            adminToolStripMenuItem.Enabled = type == 1; // kiem tra quyen admin
-            thôngTinTàiKhoảnToolStripMenuItem.Text += "("+ loginAccount.DisplayName +")";
-        }
-
-
 
 
 
@@ -171,7 +173,7 @@ namespace PresentationLayer
 
         private void thôngTinCáNhânToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            fAccountProfile f = new fAccountProfile( loginAccount);
+            fAccountProfile f = new fAccountProfile(loginAccount);
             f.ShowDialog();
         }
 
@@ -213,17 +215,14 @@ namespace PresentationLayer
         {
             Table table = lsvBill.Tag as Table; //lay ra table hien tai
             int idBill = BillDAL.Instance.GetUnckeckBillIdByTableID(table.ID);
-
+            ShowBillDetailText(table.ID); // ShowBill
             float totalPrice = float.Parse(txtTotalPrice.Text.Split(',')[0]);
             {
-                if (MessageBox.Show("Bạn có muốn thanh toán hóa đơn cho bàn " + table.Name,
-                        "Thông báo",
-                        MessageBoxButtons.OKCancel) == DialogResult.OK)
-                {
-                    BillDAL.Instance.CheckOut(idBill,totalPrice);
+
+                    BillDAL.Instance.CheckOut(idBill, totalPrice);
                     ShowBill(table.ID);
                     LoadTable();
-                }
+
             }
 
 
@@ -244,7 +243,55 @@ namespace PresentationLayer
                 LoadTable();
             }
         }
-        
+
+        private void txtTotalPrice_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+
+
+
+
+
+
+        // Hiển thị hóa đơn
+        private void ShowBillDetailText(int tableId)
+        {
+            List<Menu> listBillInfo = MenuDAL.Instance.GetListMenuByTable(tableId);
+            StringBuilder billContent = new StringBuilder();
+            billContent.AppendLine($"                                                Cafe Thắng Tiến                  ");
+            billContent.AppendLine($" ");
+            billContent.AppendLine($"=============== HÓA ĐƠN THANH TOÁN===============");
+            billContent.AppendLine($" ");
+            billContent.AppendLine($"                       Địa chỉ : 55 Giải Phóng, Quận Hai Bà Trưng, Hà Nội");
+            billContent.AppendLine($"                                        Pass Wifi :19001008");
+            billContent.AppendLine($" ");
+            billContent.AppendLine($" ");
+            billContent.AppendLine($"Bàn phục vụ :  {(lsvBill.Tag as Table).Name}");
+            billContent.AppendLine($" ");
+            billContent.AppendLine($" ");
+            billContent.AppendLine("--------------------------------------------------------------------------------------------");
+            billContent.AppendLine($"Thành tiền                Số lượng                Tên món ");
+            billContent.AppendLine("--------------------------------------------------------------------------------------------");
+
+            float totalPrice = 0;
+
+            foreach (Menu item in listBillInfo)
+            {
+                billContent.AppendLine($"{item.TotalPrice.ToString()}   VNĐ                      {item.Count}                     {item.FoodName}");
+                totalPrice += item.TotalPrice;
+            }
+
+            billContent.AppendLine("--------------------------------------------------------------------------------------------");
+            billContent.AppendLine($"TỔNG CỘNG: {totalPrice.ToString("")}     VNĐ ");
+            billContent.AppendLine("--------------------------------------------------------------------------------------------");
+            billContent.AppendLine($" ");
+            billContent.AppendLine($" ");
+            billContent.AppendLine($"Khách hàng có phản hồi về thái độ và dịch vụ xin vui lòng liên hệ qua tổng đài :0565178543 .Để được ship hàng tận nơi ấn phím 1");
+            // them tat ca vao roi show
+            MessageBox.Show(billContent.ToString(), "Hóa đơn thanh toán", MessageBoxButtons.OK);
+        }
 
     }
 }

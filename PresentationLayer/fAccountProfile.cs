@@ -62,7 +62,7 @@ namespace PresentationLayer
                 }
                 else
                 {
-                    MessageBox.Show("Điền sai mật khẩu");
+                    MessageBox.Show("Cập nhật thất bại");
                 }
             }
 
