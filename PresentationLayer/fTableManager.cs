@@ -139,25 +139,34 @@ namespace PresentationLayer
 
         private void btnAddFood_Click(object sender, EventArgs e)
         {
-            Table table = lsvBill.Tag as Table; //lay ra table hien tai
 
 
-            int idBill = BillDAL.Instance.GetUnckeckBillIdByTableID(table.ID);
-            int foodID = (cbFood.SelectedItem as Food).ID;
-            int count = (int)nmFoodCount.Value;
-
-
-            if (idBill == -1) //ko co bill thi them moi
+            if (lsvBill.Tag != null)
             {
-                BillDAL.Instance.InsertBill(table.ID);
-                BillInfoDAL.Instance.InsertBillInfo(BillDAL.Instance.GetMaxIDBill(), foodID, count);
+                Table table = lsvBill.Tag as Table; //lay ra table hien tai
+
+
+                int idBill = BillDAL.Instance.GetUnckeckBillIdByTableID(table.ID);
+                int foodID = (cbFood.SelectedItem as Food).ID;
+                int count = (int)nmFoodCount.Value;
+
+                if (idBill == -1) //ko co bill thi them moi
+                {
+                    BillDAL.Instance.InsertBill(table.ID);
+                    BillInfoDAL.Instance.InsertBillInfo(BillDAL.Instance.GetMaxIDBill(), foodID, count);
+                }
+                else
+                {
+                    BillInfoDAL.Instance.InsertBillInfo(idBill, foodID, count);
+                }
+                ShowBill(table.ID);
+                LoadTable();
             }
             else
             {
-                BillInfoDAL.Instance.InsertBillInfo(idBill, foodID, count);
+                MessageBox.Show("chưa chọn bàn");
             }
-            ShowBill(table.ID);
-            LoadTable();
+        
         }
 
 
@@ -212,16 +221,16 @@ namespace PresentationLayer
         }
 
         private void btnCheckout_Click(object sender, EventArgs e)
-        {
+        { 
             Table table = lsvBill.Tag as Table; //lay ra table hien tai
             int idBill = BillDAL.Instance.GetUnckeckBillIdByTableID(table.ID);
             ShowBillDetailText(table.ID); // ShowBill
             float totalPrice = float.Parse(txtTotalPrice.Text.Split(',')[0]);
             {
 
-                    BillDAL.Instance.CheckOut(idBill, totalPrice);
-                    ShowBill(table.ID);
-                    LoadTable();
+                BillDAL.Instance.CheckOut(idBill, totalPrice);
+                ShowBill(table.ID);
+                LoadTable();
 
             }
 

@@ -233,6 +233,7 @@
             txbPassWord.Name = "txbPassWord";
             txbPassWord.Size = new Size(309, 23);
             txbPassWord.TabIndex = 1;
+            txbPassWord.UseSystemPasswordChar = true;
             // 
             // label6
             // 
@@ -291,6 +292,7 @@
             txbNewPassWord.Name = "txbNewPassWord";
             txbNewPassWord.Size = new Size(309, 23);
             txbNewPassWord.TabIndex = 1;
+            txbNewPassWord.UseSystemPasswordChar = true;
             // 
             // label8
             // 
@@ -348,6 +350,8 @@
             txbReEnterPassWord.Name = "txbReEnterPassWord";
             txbReEnterPassWord.Size = new Size(309, 23);
             txbReEnterPassWord.TabIndex = 1;
+            txbReEnterPassWord.Text = " ";
+            txbReEnterPassWord.UseSystemPasswordChar = true;
             // 
             // label10
             // 
@@ -394,7 +398,6 @@
             Controls.Add(panel2);
             Name = "fAccountProfile";
             Text = "Thông tin cá nhân";
-
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
             panel3.ResumeLayout(false);
